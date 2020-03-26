@@ -7,4 +7,4 @@ Things I had saved.
 
 #This will be a Vault for code to help in my futures projects
 
-<h1>Vault</h1>
+<h1 style="background:#ffb606;color:white;">Vault of Cool Things</h1>
