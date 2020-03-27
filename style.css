@@ -13,11 +13,34 @@ body{
     font-weight: 200;
     width:70%;
     padding: 1em;
-   text-align: left;
-   margin: 0 auto;
+    margin: 0 auto;
+    margin-top: 2em;
    
 }
 
+ .header{
+    background: rgb(138, 52, 52);
+    filter:drop-shadow(0 6px 5px rgba(0, 0, 0, 0.568));
+    text-align:center;
+    color:white;
+    margin:5px 10px;
+    width: 50%;
+    height: 25px;
+    transition: with 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-transition: width 1s;
+    -webkit-transition-timing-function: cubic-bezier(10,20,11,1);
+}
+.header:hover {
+    background: rgba(26, 15, 15, 0.822);
+    filter:drop-shadow(0 0 6px 6px rgba(121, 26, 26, 0.801));
+    color:white;
+    font-weight:300;
+    width: 70%;
+    
+    
+}
+
 .post{
-    text-align: center;
+    text-align: justify;
 }
