@@ -375,3 +375,63 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 
 !ENTRY com.vaadin.designer2 1 0 2020-03-26 17:01:05.835
 !MESSAGE Save JSON notifications content to cache file C:\Users\johnkegd\Documents\DEVELOPER\devJava\clonFor-Funn\for-funn\JAVA\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-26 21:01:05.691
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-26 21:01:05.805
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-26 21:01:06.970
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-26 21:01:07.000
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-26 21:01:07.046
+!MESSAGE Save JSON notifications content to cache file C:\Users\johnkegd\Documents\DEVELOPER\devJava\clonFor-Funn\for-funn\JAVA\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 01:01:05.937
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 01:01:05.956
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 01:01:06.936
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 01:01:06.953
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 01:01:06.980
+!MESSAGE Save JSON notifications content to cache file C:\Users\johnkegd\Documents\DEVELOPER\devJava\clonFor-Funn\for-funn\JAVA\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 05:01:06.416
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 05:01:06.435
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 05:01:07.093
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 05:01:07.110
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 05:01:07.134
+!MESSAGE Save JSON notifications content to cache file C:\Users\johnkegd\Documents\DEVELOPER\devJava\clonFor-Funn\for-funn\JAVA\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 09:01:06.507
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 09:01:06.539
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 09:01:07.714
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 09:01:07.737
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 09:01:07.760
+!MESSAGE Save JSON notifications content to cache file C:\Users\johnkegd\Documents\DEVELOPER\devJava\clonFor-Funn\for-funn\JAVA\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
