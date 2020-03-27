@@ -1,4 +1,9 @@
-cortando texto desde vim
+cortando texto desde vio
+
+
+
+
+linea de prueba actual
 
 .............
 ............

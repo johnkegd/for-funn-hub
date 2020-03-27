@@ -624,3 +624,21 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 
 !ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:41.865
 !MESSAGE Status code for request is 204
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-27 14:24:19.605
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.jUazTvbB
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-27 14:24:19.647
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.jUazTvbB
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-27 14:24:19.653
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-27 14:24:19.659
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.jUazTvbB => OK
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 14:24:20.684
+!MESSAGE Jetty stopped at http://null:0
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 14:24:20.699
+!MESSAGE Removed all models from server.
