@@ -435,3 +435,192 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 
 !ENTRY com.vaadin.designer2 1 0 2020-03-27 09:01:07.760
 !MESSAGE Save JSON notifications content to cache file C:\Users\johnkegd\Documents\DEVELOPER\devJava\clonFor-Funn\for-funn\JAVA\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:01:06.950
+!MESSAGE Fetching all notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:01:07.003
+!MESSAGE Schedule fetching new notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:01:08.497
+!MESSAGE HTTP Response code :200
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:01:08.519
+!MESSAGE Parse notifications
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:01:08.542
+!MESSAGE Save JSON notifications content to cache file C:\Users\johnkegd\Documents\DEVELOPER\devJava\clonFor-Funn\for-funn\JAVA\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:01:09.186
+!MESSAGE Image https://website.vaadin.com/hubfs/Blog-post%20%284%29.png is downloaded
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:02:33.181
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:02:33.413
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:02:33.425
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:20.382
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:20.524
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:20.634
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:20.718
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:20.724
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:20.732
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:20.826
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:20.834
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:20.842
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:20.906
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:20.913
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:21.211
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:21.219
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:21.229
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:21.334
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:21.341
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:21.751
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:03:21.759
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:34.776
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:34.904
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.048
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.209
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.273
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.280
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.288
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.398
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.404
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.476
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.482
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.545
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.557
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.568
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.733
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.740
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.770
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.886
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.892
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.960
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:35.970
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:36.170
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:36.315
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:36.442
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:36.496
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:36.502
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:36.571
+!MESSAGE Marking a list of notifications as read/skipped
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:36.620
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:36.626
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:36.643
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:36.650
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:36.747
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:36.752
+!MESSAGE Status code for request is 204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:41.347
+!MESSAGE Sending 'read more' request
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:41.858
+!MESSAGE HTTP Response code :204
+
+!ENTRY com.vaadin.designer2 1 0 2020-03-27 13:04:41.865
+!MESSAGE Status code for request is 204
