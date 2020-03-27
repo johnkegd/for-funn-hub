@@ -7,9 +7,16 @@ Things I had saved.
 
 #This will be a Vault for code to help in my futures projects
 
-<h1 align="center">Vault of Cool Things</h1>
+<h1 align="center">&#128526; Vault of Cool Things &#128512; </h1>
+
+
  
  
+
+
+
+
+
  
  
  ```
