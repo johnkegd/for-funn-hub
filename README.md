@@ -1,9 +1,8 @@
-# Code and things for practique and learn
+# This is the Footer Section
 
-Here I keep some of my code snippets, trying some curious things.
+Please take attention to make a merge or something in direction to Master
 
 
-Things I had saved.
 
 #This will be a Vault for code to help in my futures projects
 
