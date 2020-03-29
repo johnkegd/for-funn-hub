@@ -1,11 +1,14 @@
-# Code and things for practique and learn
+# This is the Header Section
 
-Here I keep some of my code snippets, trying some curious things.
+This area is very important, Please be sure about your changes before merge.
 
 
+<<<<<<< HEAD
 Things I had saved.
 
 
+=======
+>>>>>>> header
 #This will be a Vault for code to help in my futures projects
 
 <h1 align="center">&#128526; Vault of Cool Things &#128512; </h1>
