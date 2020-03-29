@@ -3,14 +3,13 @@ body{
     margin:0;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 16;
-
+    background:rgba(121, 26, 26, 0.801);
     color:black;
 
 }
 
 .post-container{
-    background: rgba(153, 153, 153, 0.493);
-  
+    background: rgb(255, 255, 255);
     font-weight: 200;
     width:70%;
     padding: 1em;
@@ -24,24 +23,43 @@ body{
     filter:drop-shadow(0 6px 5px rgba(0, 0, 0, 0.568));
     text-align:center;
     color:white;
-    margin:5px 10px;
-    width: 50%;
-    height: 25px;
-    transition: with 1s;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    -webkit-transition: width 1s;
-    -webkit-transition-timing-function: cubic-bezier(10,20,11,1);
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: width 1s;
+    transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55) 2s;
+    -webkit-transition: cubic-bezier(.68,-0.55,.27,1.55) 2s;
+    -webkit-transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55) 2s;
 }
 .header:hover {
     background: rgba(26, 15, 15, 0.822);
     filter:drop-shadow(0 0 6px 6px rgba(121, 26, 26, 0.801));
     color:white;
     font-weight:300;
-    width: 70%;
+    width: 50%;
     
     
 }
-
 .post{
     text-align: justify;
 }
+
+.post-footer{
+    background: rgb(2, 1, 1);
+    color:white;
+    filter:drop-shadow(0 6px 5px rgba(0,0,0,0.868));
+    padding: 0.5em;
+    text-align: center;
+    transition: ease-in 2s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: ease-in 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.post-footer:hover{
+    background: rgba(121, 26, 26, 0.801);
+    filter:drop-shadow(0 2px 2px rgba(0,0,0,0.868));
+    border: 3px;
+    border-radius: 35px 15px;
+}
+
