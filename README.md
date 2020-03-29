@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This is the Header Section
 
 This area is very important, Please be sure about your changes before merge.
@@ -5,6 +6,13 @@ This area is very important, Please be sure about your changes before merge.
 
 <<<<<<< HEAD
 Things I had saved.
+=======
+# This is the Footer Section
+
+Please take attention to make a merge or something in direction to Master
+
+
+>>>>>>> footer
 
 
 =======
