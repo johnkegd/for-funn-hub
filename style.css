@@ -18,6 +18,23 @@ body{
    
 }
 
+.post-container img{ 
+    margin-left: 0;
+    width:100%;
+   
+}
+
+.over-img{
+    background:rgba(0, 0, 0, 0.472);
+    position: relative;
+    z-index: 2;
+}
+
+.post-container img:hover{
+    filter:drop-shadow(0 6px 5px rgba(0,0,0,0.568));
+   
+}
+
  .header{
     background: rgb(138, 52, 52);
     filter:drop-shadow(0 6px 5px rgba(0, 0, 0, 0.568));
