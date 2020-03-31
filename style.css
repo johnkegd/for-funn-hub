@@ -3,13 +3,13 @@ body{
     margin:0;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 16;
-    background:rgba(121, 26, 26, 0.801);
-    color:black;
+    background:rgba(136, 53, 53, 0.801);
+    color:white;
 
 }
 
 .post-container{
-    background: rgb(255, 255, 255);
+    background: rgba(3, 1, 1, 0.568);
     font-weight: 200;
     width:70%;
     padding: 1em;
