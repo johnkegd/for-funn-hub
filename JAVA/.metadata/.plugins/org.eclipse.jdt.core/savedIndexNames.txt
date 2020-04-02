@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+C:\Users\johnkegd\Documents\DEVELOPER\devJava\clonFor-Funn\for-funn\JAVA\.metadata\.plugins\org.eclipse.jdt.core
-1419014417.index
-1153931371.index
