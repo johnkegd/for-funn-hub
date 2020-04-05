@@ -18,6 +18,7 @@ public class Conextion {
 		} catch (SQLException e) {
 			// TODO: handle exception
 			System.out.println(e);
+			System.out.println("No he podido conectar la BD");
 		}
 		
 		return conection;

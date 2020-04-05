@@ -23,40 +23,41 @@ public class MensajeService {
 	}
 	
 	public static void listarMensajes() {
-		System.out.println("listando mensaje xd");
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("¿Tiene algun Id de mensaje?");
-		System.out.println("1. Si  / 2.No : ");
-		int respose = Integer.parseInt(sc.nextLine());
-		
-		if(respose == 1) {
-			int id = sc.nextInt();
-			Mensajes consulta = new Mensajes();
-			consulta.setId_mensaje(id);
-			
-		}else {
-			
-			
-			
-			
-			
-			
-		}
-		
-		
-		
-		
-		
+	
+		MensajesDAO.leerMensajesDB();
 		
 	}
 	
 	public static void borrarMensajes() {
-		System.out.println("borrando mensaje xd");
+		System.out.println("Borrar un Mensaje");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Introduce el Id: ");
+		
+		int id = Integer.parseInt(sc.nextLine());
+		MensajesDAO.borrarMensajeDB(id);
+		
+		
 	}
 	
 	public static void editarMensajes() {
 		System.out.println("editando mensaje xd");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Introduce el id para Modificar: ");
+		int id_update = Integer.parseInt(sc.nextLine());
+		System.out.println("Nuevo mensaje: ");
+		String mensaje = sc.nextLine();
+		System.out.println("Autor: ");
+		String autor = sc.nextLine();
+		
+		Mensajes updater = new Mensajes();
+		updater.setMensaje(mensaje);
+		updater.setAutor_mensaje(autor);
+		updater.setId_mensaje(id_update);
+		
+		MensajesDAO.actualizarMensajesDB(updater);
+		
+		
+		
 	}
 	
 	
