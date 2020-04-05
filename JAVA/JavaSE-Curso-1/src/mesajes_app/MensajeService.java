@@ -18,13 +18,37 @@ public class MensajeService {
 		registro.setMensaje(mensaje);
 		registro.setAutor_mensaje(nombre);
 		
-		
 		MensajesDAO.crearMensajesDB(registro);
 		
 	}
 	
 	public static void listarMensajes() {
 		System.out.println("listando mensaje xd");
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("¿Tiene algun Id de mensaje?");
+		System.out.println("1. Si  / 2.No : ");
+		int respose = Integer.parseInt(sc.nextLine());
+		
+		if(respose == 1) {
+			int id = sc.nextInt();
+			Mensajes consulta = new Mensajes();
+			consulta.setId_mensaje(id);
+			
+		}else {
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
 	}
 	
 	public static void borrarMensajes() {
