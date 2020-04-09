@@ -5,8 +5,11 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import com.google.gson.Gson;
+
+import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class GatosService {
@@ -95,8 +98,30 @@ public class GatosService {
 	
 	
 	
-	public static void favoritoGato(Gatos gato) {
-		System.out.println("Eligiendo Favorito");
+	public static void favoritoGato(Gatos gato) throws IOException {
+		
+		
+		try {
+			OkHttpClient client = new OkHttpClient().newBuilder().build();
+					MediaType mediaType = MediaType.parse("application/json,text/plain");
+					@SuppressWarnings("deprecation")
+					RequestBody body = RequestBody.create(mediaType, "{\r\n  \"image_id\":\""+ gato.getId() + "\"\r\n}");
+					Request request = new Request.Builder()
+					  .url("https://api.thecatapi.com/v1/favourites")
+					  .method("POST", body)
+					  .addHeader("Content-Type", "application/json")
+					  .addHeader("x-api-key", gato.getApikey()).build();
+					Response response = client.newCall(request).execute();
+					System.out.println(response);
+
+		} catch (IOException e) {
+			System.out.println(e);
+		
+		}
+		
+
+		
+		
 	}
 	
 	
