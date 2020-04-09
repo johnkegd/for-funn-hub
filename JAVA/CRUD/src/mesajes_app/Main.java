@@ -1,8 +1,6 @@
 package mesajes_app;
 
-import java.util.*;
-import java.sql.Connection;
-import java.sql.SQLException;
+import java.util.Scanner;
 
 
 public class Main {
