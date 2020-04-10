@@ -7,10 +7,7 @@ public class Gatos {
 	String apikey = "db4b86f2-5fa2-43a2-9a41-c4b077a86c42";
 	String img;
 	
-	
-	
-	
-	
+
 	
 	public void setId(String id) {
 		this.id = id;

@@ -16,7 +16,7 @@ public class Main {
 	
 	public static void mainMenu() throws IOException {
 		ImageIcon icon = new ImageIcon("icon/cat.png");
-		String[] btn = {"Ver Gatos","Salir","test"};
+		String[] btn = {"Ver Gatos","Gatos Favoritos","Salir"};
 
 		
 		int respose = JOptionPane.showOptionDialog(null, "Elije una Opcion", "Menu", 0, JOptionPane.DEFAULT_OPTION, icon, btn, btn[0]);
@@ -26,11 +26,11 @@ public class Main {
 			GatosService.verGatos();
 			break;
 		case 1:
-			System.out.println("saliendo");
-			System.exit(0);
+			GatosService.verFavoritos();
 			break;
 		case 2:
-			
+			System.out.println("saliendo");
+			System.exit(0);
 			break;
 		default:
 			System.out.println("Finalizando");

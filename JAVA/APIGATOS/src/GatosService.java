@@ -132,16 +132,66 @@ public class GatosService {
 	}
 	
 	
+	public static void verFavoritos() throws IOException {
+		
+		Gatos gato = new Gatos();
+		
+		try {
+			
+			OkHttpClient client = new OkHttpClient().newBuilder()
+				  .build();
+				Request request = new Request.Builder()
+				  .url("https://api.thecatapi.com/v1/favourites")
+				  .method("GET", null)
+				  .addHeader("x-api-key", gato.getApikey())
+				  .build();
+				Response response = client.newCall(request).execute();
+				
+				String Json = response.body().string();
+				
+				Gson gson = new Gson();
+				
+				GatosFav [] gatosArray = gson.fromJson(Json, GatosFav[].class);
+				
+				int total =0;
+				for(int i =1; i <= gatosArray.length;i++) {
+					total++;
+					
+				}
+				System.out.println("Total Favoritos: "+ total);
+				
+			/*	if(gatosArray.length > 0) {
+					int min = 1;
+					int max = gatosArray.length;
+					int aleatorio = (int) (Math.random() * ((max-min)+1)) + min;
+					int index = aleatorio -1;
+					
+					GatosFav gatosfav = gatosArray[index];
+					
+					
+				} */
+			
+				
+				
+				
+		}catch(IOException ex) {
+			
+			System.out.println(ex);
+		}
+		
+		
+	}
+	
+	
 	
 	public static void deleteFavorito(Gatos gato)throws IOException{
 		
 		try {
 			
 			OkHttpClient client = new OkHttpClient();
-
 			Request request = new Request.Builder()
 			  .url("https://api.thecatapi.com/v1/favourites/"+gato.getId())
-			  .delete()
+			  .delete(null)
 			  .addHeader("x-api-key", gato.getApikey())
 			  .build();
 
