@@ -82,7 +82,7 @@ public class GatosService {
 						System.out.println("introduce id: ");
 						String respose = sc.nextLine();
 						gatos.setId(respose);
-						deleteFavorito(gatos);
+						deleteFavorito(gatos.getId(), gatos.apikey, gatos.img);
 						break;
 					case 3:
 						Main.mainMenu();
@@ -120,7 +120,13 @@ public class GatosService {
 	              .addHeader("x-api-key", gato.getApikey())
 	              .build();
 	            Response response = client.newCall(request).execute();
-	            System.out.println(response);
+	            if(response.code() == 200) {
+	            	 JOptionPane.showMessageDialog(null, "Gato: " + gato.getId() + " Agregado");
+	            }else {
+	            	JOptionPane.showMessageDialog(null, "Algo ha fallado - Code: " + response.code());
+	            }
+	            verGatos();
+	           
 
 		} catch (IOException e) {
 			System.out.println(e);
@@ -153,14 +159,9 @@ public class GatosService {
 				
 				GatosFav [] gatosArray = gson.fromJson(Json, GatosFav[].class);
 				
-				int total =0;
-				for(int i =1; i <= gatosArray.length;i++) {
-					total++;
-					
-				}
-				System.out.println("Total Favoritos: "+ total);
 				
-			/*	if(gatosArray.length > 0) {
+				
+			if(gatosArray.length > 0) {
 					int min = 1;
 					int max = gatosArray.length;
 					int aleatorio = (int) (Math.random() * ((max-min)+1)) + min;
@@ -168,8 +169,51 @@ public class GatosService {
 					
 					GatosFav gatosfav = gatosArray[index];
 					
+					Image img = null;
 					
-				} */
+					try {
+						URL url = new URL(gatosfav.image.getUrl());
+						img = ImageIO.read(url);
+						ImageIcon favorito = new ImageIcon(img);
+						
+						if(favorito.getIconWidth() > 800) {
+							
+							Image fav = favorito.getImage();
+							Image resized = fav.getScaledInstance(800, 600, java.awt.Image.SCALE_SMOOTH);
+							favorito = new ImageIcon(resized);
+						}
+						
+					String [] btn = {"Siguiente","Eliminar","Volver"};
+					int opcion = JOptionPane.showOptionDialog(null, "","Gatos Favoritos "+ gatosfav.image_id, 0, JOptionPane.INFORMATION_MESSAGE, favorito, btn, btn[0]);
+						
+						switch(opcion){
+						case 0:
+							verFavoritos();
+							break;
+						case 1:
+							deleteFavorito(gatosfav.id, gatosfav.apikey,gatosfav.image_id);
+							break;
+						case 2:
+							verGatos();
+							break;
+							
+							default:
+								System.out.println("Finalizando");
+								System.exit(0);
+								break;
+						
+						}
+					
+					
+						
+					} catch (Exception e) {
+						System.out.println(e);
+						// TODO: handle exception
+					}
+					
+					
+					
+				} 
 			
 				
 				
@@ -184,19 +228,26 @@ public class GatosService {
 	
 	
 	
-	public static void deleteFavorito(Gatos gato)throws IOException{
+	public static void deleteFavorito(String gato_id, String key, String gato_img)throws IOException{
 		
 		try {
 			
 			OkHttpClient client = new OkHttpClient();
 			Request request = new Request.Builder()
-			  .url("https://api.thecatapi.com/v1/favourites/"+gato.getId())
+			  .url("https://api.thecatapi.com/v1/favourites/"+gato_id)
 			  .delete(null)
-			  .addHeader("x-api-key", gato.getApikey())
+			  .addHeader("x-api-key", key)
 			  .build();
 
 			Response response = client.newCall(request).execute();
-			System.out.println(response);
+		
+			if(response.code() == 200) {
+				JOptionPane.showMessageDialog(null, "Gato Favorito " + gato_id + " Eliminado ");
+			}else {
+				JOptionPane.showMessageDialog(null, "Algo a fallado " + response.code());
+			}
+			
+			verFavoritos();
 			
 		} catch (Exception ex) {
 			System.out.println(ex);

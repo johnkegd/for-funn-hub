@@ -16,7 +16,7 @@ public class Main {
 	
 	public static void mainMenu() throws IOException {
 		ImageIcon icon = new ImageIcon("icon/cat.png");
-		String[] btn = {"Ver Gatos","Gatos Favoritos","Salir"};
+		String[] btn = {"Ver Gatos","Favoritos","Salir"};
 
 		
 		int respose = JOptionPane.showOptionDialog(null, "Elije una Opcion", "Menu", 0, JOptionPane.DEFAULT_OPTION, icon, btn, btn[0]);
