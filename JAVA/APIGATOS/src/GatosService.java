@@ -1,12 +1,12 @@
 import java.awt.Image;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Scanner;
+
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import com.google.gson.Gson;
-
-import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -63,7 +63,7 @@ public class GatosService {
 					
 					
 					// String menu = "Opciones" + "1.Siguiente \n" + "2.favorito \n" + "3.volver \n";
-					String [] btn = {"Siguiente","Favorito","Main Menu"};
+					String [] btn = {"Siguiente","Favorito","DeleteFav","Main Menu"};
 					String id_gato = gatos.getId();
 					
 					int opcion = JOptionPane.showOptionDialog(null, "", "Id: "+ id_gato, 0, JOptionPane.INFORMATION_MESSAGE, fondoGato, btn, btn[0]);
@@ -74,9 +74,17 @@ public class GatosService {
 						verGatos();
 						break;
 					case 1:
-						System.out.println("favorito");
+						System.out.println("favorito : " + gatos.getId());
+						addFavorito(gatos);
 						break;
 					case 2:
+						Scanner sc = new Scanner(System.in);
+						System.out.println("introduce id: ");
+						String respose = sc.nextLine();
+						gatos.setId(respose);
+						deleteFavorito(gatos);
+						break;
+					case 3:
 						Main.mainMenu();
 						break;
 					default:
@@ -98,30 +106,52 @@ public class GatosService {
 	
 	
 	
-	public static void favoritoGato(Gatos gato) throws IOException {
+
+	public static void addFavorito(Gatos gato) throws IOException {
 		
 		
 		try {
-			OkHttpClient client = new OkHttpClient().newBuilder().build();
-					MediaType mediaType = MediaType.parse("application/json,text/plain");
-					@SuppressWarnings("deprecation")
-					RequestBody body = RequestBody.create(mediaType, "{\r\n  \"image_id\":\""+ gato.getId() + "\"\r\n}");
-					Request request = new Request.Builder()
-					  .url("https://api.thecatapi.com/v1/favourites")
-					  .method("POST", body)
-					  .addHeader("Content-Type", "application/json")
-					  .addHeader("x-api-key", gato.getApikey()).build();
-					Response response = client.newCall(request).execute();
-					System.out.println(response);
+			 OkHttpClient client = new OkHttpClient();
+				RequestBody body = RequestBody.create("{\n\t\"image_id\": \""+gato.getId()+"\"\n}",null);
+	            Request request = new Request.Builder()
+	              .url("https://api.thecatapi.com/v1/favourites")
+	              .post(body)
+	              .addHeader("Content-Type", "application/json")
+	              .addHeader("x-api-key", gato.getApikey())
+	              .build();
+	            Response response = client.newCall(request).execute();
+	            System.out.println(response);
 
 		} catch (IOException e) {
 			System.out.println(e);
 		
 		}
-		
 
 		
 		
+	}
+	
+	
+	
+	public static void deleteFavorito(Gatos gato)throws IOException{
+		
+		try {
+			
+			OkHttpClient client = new OkHttpClient();
+
+			Request request = new Request.Builder()
+			  .url("https://api.thecatapi.com/v1/favourites/"+gato.getId())
+			  .delete()
+			  .addHeader("x-api-key", gato.getApikey())
+			  .build();
+
+			Response response = client.newCall(request).execute();
+			System.out.println(response);
+			
+		} catch (Exception ex) {
+			System.out.println(ex);
+			// TODO: handle exception
+		}
 	}
 	
 	
